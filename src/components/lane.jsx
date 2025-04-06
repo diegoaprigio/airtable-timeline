@@ -33,8 +33,6 @@ const Lane = ({ item, selectedMonth, months }) => {
       key={item.id}
       className="flex flex-row items-center justify-center relative border-2 border-solid border-green-100 bg-green-50 rounded-lg p-2 h-10 text-black cursor-pointer hover:bg-green-100 hover:border-green-200 transition-all duration-300 ease-in-out"
       style={{ gridColumnStart: gridStart, gridColumnEnd: gridEnd }}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
     >
       <span className="outline-none truncate w-full text-center text-semibold text-sm">
         {item.name}
