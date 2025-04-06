@@ -1,14 +1,13 @@
 const DaysSubHeader = ({ days }) => {
-  //[calc(100vh-5rem)]
   return (
     <div
-      className="grid"
+      className="grid gap-4"
       style={{ gridTemplateColumns: `repeat(${days.length}, 1fr)` }}
     >
       {days.map((day, index) => (
-        <div key={index} className="flex flex-col justify-center gap-4 p-2">
+        <div key={index} className="flex flex-col justify-center gap-4">
           <span className="text-xs text-gray-400">{day}</span>
-          <div className="h-[calc(100vh-10rem)] w-1 absolute top-40 mt-1 border-r-2 border-solid border-gray-100"></div>
+          {/* <div className="h-[calc(100vh-20rem)] w-1 absolute top-40 mt-1 border-r-2 border-solid border-gray-100"></div> */}
         </div>
       ))}
     </div>

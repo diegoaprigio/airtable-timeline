@@ -30,7 +30,7 @@ function App() {
   }, [selectedMonth]);
 
   return (
-    <div className="flex flex-col items-center max-w-screen-lg mx-auto gap-4 p-8">
+    <div className="flex flex-col max-w-screen-lg mx-auto gap-4 p-8">
       <MonthSelector
         months={months}
         selectedMonth={selectedMonth}

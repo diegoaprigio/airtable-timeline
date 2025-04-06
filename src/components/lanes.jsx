@@ -6,7 +6,7 @@ const Lanes = ({ lanes, days, selectedMonth, months }) => {
       {lanes.map((lane, index) => (
         <div
           key={index}
-          className="grid gap-x-1"
+          className="grid"
           style={{ gridTemplateColumns: `repeat(${days}, 1fr)` }}
         >
           {lane.map((item) => (
