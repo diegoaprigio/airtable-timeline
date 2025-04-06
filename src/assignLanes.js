@@ -65,10 +65,12 @@ export const getMonths = (items) => {
     firstDate.setMonth(firstDate.getMonth() + 1);
     firstDate.setDate(1);
 
+    const monthIndex = date.getMonth();
     const monthName = date.toLocaleString("default", { month: "long" });
     const year = date.getFullYear();
 
     const month = {
+      id: monthIndex,
       month: monthName,
       year: year,
       totalDaysInMonth: new Date(
